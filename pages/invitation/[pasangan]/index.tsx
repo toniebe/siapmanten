@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Router, { useRouter } from "next/router";
 import Button from "../../../components/Button";
-import Link from "next/link";
-import Alert from "../../../components/Alert";
 import TextInput from "../../../components/TextInput";
 
 
