@@ -1,41 +1,40 @@
 import React, { ButtonHTMLAttributes } from "react";
 
 interface ButtonProps {
-  typeButton: string | "Primary" | "Secondary";
+  hoverColor?: string ;
   isRound: boolean;
-  backgroundColor: string | "blue" | "orange";
+  backgroundColor: string;
   title?: string;
   titleColor?: string;
-  icon?: string;
+  icon?: any;
   loading?: boolean;
   disable?: boolean;
+  size?:string;
 }
 
 export default function Button({
-  typeButton,
+  hoverColor ="bg-blue-300",
   isRound,
-  backgroundColor,
+  backgroundColor = "bg-mantenp-primary",
   title,
   titleColor,
   icon,
   loading,
   disable,
+  size="large",
   ...nativeProps
 }: ButtonProps & ButtonHTMLAttributes<HTMLButtonElement>) {
+  console.log(backgroundColor);
+  
   return (
     <button
-      className={`bg-app${typeButton}-${backgroundColor} my-3  hover:bg-gray-400 text-gray-800 font-bold py-2 px-7 ${isRound ? `rounded-full` : `rounded`} w-full  h-fit  ${icon ? 'inline-flex' : 'grid'}`}
+      className={`${backgroundColor} my-3  hover:${hoverColor} text-gray-800 font-bold py-2 px-7 ${isRound ? `rounded-full` : `rounded`} ${size === 'large' ? 'w-full' : size === 'medium' ? 'w-1/2' : 'w-fit'} h-fit  ${icon ? 'inline-flex justify-center' : 'grid'}`}
       disabled={disable}
       {...nativeProps}
     >
       {icon ? (
-        <svg
-          className="fill-current w-4 h-4 mr-2"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-        >
-          <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-        </svg>
+       icon
+      
       ) : null}
       <p  className={`text-center text-white `}>{title} </p>
     </button>

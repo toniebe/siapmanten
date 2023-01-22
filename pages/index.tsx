@@ -30,6 +30,7 @@ export default function Home() {
   };
 
   return (
+    // <div className="grid px-6  grid-flow-row-dense  bg-white min-w-screen min-h-screen lg:justify-items-center ">
     <div className="grid px-6  grid-flow-row-dense  bg-white min-w-screen min-h-screen lg:justify-items-center ">
       <div
         className={`grid md:auto-cols-max lg:w-1/2 lg:pl-7  md:row-start-1 self-center `}
@@ -61,8 +62,8 @@ export default function Home() {
         />
         <Button
           isRound
-          typeButton="Primary"
-          backgroundColor="blue"
+          backgroundColor='bg-mantenp-blue'
+          hoverColor='bg-blue-100'
           title="next"
           type="submit"
           onClick={() => handleOnClick()}

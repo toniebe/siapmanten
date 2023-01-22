@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import Cover from "../../../../components/organisms/Cover";
 
 interface propUndangan{
   tamu: string,
@@ -13,6 +14,7 @@ export default function tamu(props: propUndangan) {
   // const {tamu,pasangan} = props
   return (
     <div>
+      <Cover />
       <p>{tamu}</p>
       <p>{pasangan}</p>
     </div>

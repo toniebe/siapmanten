@@ -9,13 +9,13 @@ export default function Alert({ title, description }: AlertProps) {
   return (
 
       
-      <div className="grid justify-item-center my-3 bg-indigo-900 text-center py-4 lg:px-4">
+      <div className="grid w-fit justify-item-center my-3 bg-blue-900 text-center py-4 lg:px-4">
      
         <div
-          className="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex"
+          className="p-2 bg-blue-800 items-center text-blue-100 leading-none lg:rounded-full flex lg:inline-flex"
           role="alert"
         >
-          <span className="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">
+          <span className="flex rounded-full bg-blue-500 uppercase px-2 py-1 text-xs font-bold mr-3">
             {title}
           </span>
 

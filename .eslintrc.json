@@ -17,5 +17,6 @@
         "react"
     ],
     "rules": {
+        "quote-props": ["error", "double"]
     }
 }
