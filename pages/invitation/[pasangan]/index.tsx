@@ -34,9 +34,9 @@ export default function index() {
   };
 
   return (
-    <div className="p-6 h-screen bg-gray-300 max-w-screen min-w-md flex justify-center items-center">
-      <div className="px-6 pt-12 md:w-screen lg:h-full lg:w-3/4  bg-white border border-gray-200 rounded-lg flex flex-col  items-center shadow  ">
-        <h2 className="text-4xl font-hammer text-mantenp-blue first-line:uppercase text-center  mb-7 mx-auto ">
+    <div className="sm:p-0 lg:p-6 h-screen bg-gray-300 max-w-screen min-w-md flex justify-center md:items-center">
+      <div className="px-6 pt-12 sm:w-screen md:w-screen lg:h-full lg:w-3/4  bg-white border border-gray-200 rounded-lg flex flex-col  md:items-center shadow  ">
+        <h2 className="text-4xl font-['hammer'] text-mantenp-blue uppercase text-center  mb-7 mx-auto ">
           {pasangan?.toLocaleString().replace("&", " & ")}
         </h2>
         <div className="lg:w-1/2 md:w-full grid self-center">

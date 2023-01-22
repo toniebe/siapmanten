@@ -9,6 +9,8 @@ module.exports = {
   theme: {
     extend: {
       hammer: ["Hammersmith-One"],
+      playfair: ["Playfair Display"],
+      montserrat: ["Montserrat"]
     },
     colors: {
       mantenp: {

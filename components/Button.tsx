@@ -17,7 +17,7 @@ export default function Button({
   isRound,
   backgroundColor = "bg-mantenp-primary",
   title,
-  titleColor,
+  titleColor="text-white",
   icon,
   loading,
   disable,
@@ -36,7 +36,7 @@ export default function Button({
        icon
       
       ) : null}
-      <p  className={`text-center text-white `}>{title} </p>
+      <p  className={`text-center ${titleColor}  `}>{title} </p>
     </button>
   );
 }

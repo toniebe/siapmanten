@@ -13,10 +13,8 @@ export default function tamu(props: propUndangan) {
   const { pasangan,tamu } = router.query;
   // const {tamu,pasangan} = props
   return (
-    <div>
+    <div className="flex justify-center min-w-screen min-h-screen bg-gray-200">
       <Cover />
-      <p>{tamu}</p>
-      <p>{pasangan}</p>
     </div>
   );
 }
